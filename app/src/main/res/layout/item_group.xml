@@ -19,6 +19,7 @@
             <com.makeramen.roundedimageview.RoundedImageView
                 android:id="@+id/iv_avatar"
                 android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 app:riv_mutate_background="true"
                 android:src="@drawable/ic_avatar_placeholder"
@@ -34,8 +35,11 @@
                 android:orientation="vertical"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/iv_avatar"
+                android:layout_toEndOf="@+id/iv_avatar"
                 android:layout_toLeftOf="@+id/extra_information"
+                android:layout_toStartOf="@+id/extra_information"
                 android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -65,7 +69,8 @@
                 android:id="@+id/extra_information"
                 android:orientation="vertical"
                 android:layout_alignParentRight="true"
-                android:gravity="right"
+                android:layout_alignParentEnd="true"
+                android:gravity="end"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
