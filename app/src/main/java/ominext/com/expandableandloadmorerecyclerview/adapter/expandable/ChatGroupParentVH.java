@@ -1,4 +1,4 @@
-package ominext.com.loopclone.adapter.expandable;
+package ominext.com.expandableandloadmorerecyclerview.adapter.expandable;
 
 import android.view.View;
 import android.widget.ImageView;
@@ -6,18 +6,18 @@ import android.widget.TextView;
 
 import com.thoughtbot.expandablerecyclerview.viewholders.GroupViewHolder;
 
-import ominext.com.loopclone.R;
+import ominext.com.expandableandloadmorerecyclerview.R;
 
 /**
  * Created by LuongHH on 2/8/2017.
  */
 
-class FriendListParentVH extends GroupViewHolder {
+class ChatGroupParentVH extends GroupViewHolder {
 
     private ImageView ivIndicationArrow;
     TextView tvParentSectionTitle;
 
-    FriendListParentVH(View itemView) {
+    ChatGroupParentVH(View itemView) {
         super(itemView);
         ivIndicationArrow = (ImageView) itemView.findViewById(R.id.exp_indication_arrow);
         tvParentSectionTitle = (TextView) itemView.findViewById(R.id.exp_parent_section_title);

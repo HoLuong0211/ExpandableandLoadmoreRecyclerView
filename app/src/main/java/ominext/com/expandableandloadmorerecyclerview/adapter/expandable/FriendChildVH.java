@@ -1,4 +1,4 @@
-package ominext.com.loopclone.adapter.expandable;
+package ominext.com.expandableandloadmorerecyclerview.adapter.expandable;
 
 import android.view.View;
 import android.widget.TextView;
@@ -6,7 +6,7 @@ import android.widget.TextView;
 import com.makeramen.roundedimageview.RoundedImageView;
 import com.thoughtbot.expandablerecyclerview.viewholders.ChildViewHolder;
 
-import ominext.com.loopclone.R;
+import ominext.com.expandableandloadmorerecyclerview.R;
 
 /**
  * Created by LuongHH on 2/7/2017.
