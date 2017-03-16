@@ -12,12 +12,12 @@ import ominext.com.expandableandloadmorerecyclerview.R;
  * Created by LuongHH on 2/8/2017.
  */
 
-class ChatGroupParentVH extends GroupViewHolder {
+public class ChatGroupParentVH extends GroupViewHolder {
 
     private ImageView ivIndicationArrow;
-    TextView tvParentSectionTitle;
+    public TextView tvParentSectionTitle;
 
-    ChatGroupParentVH(View itemView) {
+    public ChatGroupParentVH(View itemView) {
         super(itemView);
         ivIndicationArrow = (ImageView) itemView.findViewById(R.id.exp_indication_arrow);
         tvParentSectionTitle = (TextView) itemView.findViewById(R.id.exp_parent_section_title);

@@ -12,12 +12,12 @@ import ominext.com.expandableandloadmorerecyclerview.R;
  * Created by LuongHH on 2/7/2017.
  */
 
-class FriendChildVH extends ChildViewHolder {
+public class FriendChildVH extends ChildViewHolder {
 
-    TextView tvName;
-    RoundedImageView ivAvatar;
+    public TextView tvName;
+    public RoundedImageView ivAvatar;
 
-    FriendChildVH(View itemView) {
+    public FriendChildVH(View itemView) {
         super(itemView);
         tvName = (TextView) itemView.findViewById(R.id.tv_name);
         ivAvatar = (RoundedImageView) itemView.findViewById(R.id.iv_avatar);

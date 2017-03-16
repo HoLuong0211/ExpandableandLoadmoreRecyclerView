@@ -11,28 +11,28 @@ import java.util.List;
 public class Friend extends BaseExpandableItemModel{
 
     @SerializedName("id")
-    private int id;
+    public int id;
 
     @SerializedName("name")
-    private String name;
+    public String name;
 
     @SerializedName("nickname")
-    private String nickname;
+    public String nickname;
 
     @SerializedName("avatar")
-    private String avatar;
+    public String avatar;
 
     @SerializedName("room_id")
-    private String roomId;
+    public String roomId;
 
     @SerializedName("total_unread")
-    private int totalUnread;
+    public int totalUnread;
 
     @SerializedName("last_message")
-    private String lastMessage;
+    public String lastMessage;
 
     @SerializedName("show_time")
-    private String showTime;
+    public String showTime;
 
     public Friend(int type, String text, String path, String uuid, int treeDepth, List children) {
         super(type, text, path, uuid, treeDepth, children);
