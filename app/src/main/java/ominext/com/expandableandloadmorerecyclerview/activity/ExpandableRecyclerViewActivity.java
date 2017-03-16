@@ -19,6 +19,8 @@ import ominext.com.expandableandloadmorerecyclerview.model.chatgroup.ChatGroup;
 import ominext.com.expandableandloadmorerecyclerview.model.chatgroup.Friend;
 import ominext.com.expandableandloadmorerecyclerview.model.chatgroup.Room;
 import ominext.com.expandableandloadmorerecyclerview.model.chatgroup.response.ChatGroupResponse;
+import ominext.com.expandableandloadmorerecyclerview.model.chatgroup.response.FriendData;
+import ominext.com.expandableandloadmorerecyclerview.model.chatgroup.response.RoomData;
 import ominext.com.expandableandloadmorerecyclerview.util.Utils;
 
 import static ominext.com.expandableandloadmorerecyclerview.adapter.ChatGroupAdapter.FRIEND_VIEW_TYPE;
@@ -68,14 +70,14 @@ public class ExpandableRecyclerViewActivity extends AppCompatActivity {
     }
 
     private List<Friend> getListFriend() {
-        Type type = new TypeToken<ChatGroupResponse>() {}.getType();
+        Type type = new TypeToken<ChatGroupResponse<FriendData>>() {}.getType();
         ChatGroupResponse response = new Gson().fromJson(Utils.LIST_FRIEND, type);
-        return response.data.list;
+        return ((FriendData)(response.data)).list;
     }
 
     private List<Room> getListRoom() {
-        Type type = new TypeToken<ChatGroupResponse>() {}.getType();
+        Type type = new TypeToken<ChatGroupResponse<RoomData>>() {}.getType();
         ChatGroupResponse response = new Gson().fromJson(Utils.LIST_ROOM, type);
-        return response.data.list;
+        return ((RoomData)(response.data)).list;
     }
 }
