@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by LuongHH on 3/16/2017.
  */
 
-public class ChatGroupReponse {
+public class ChatGroupResponse {
 
     @SerializedName("error")
     public Integer error;

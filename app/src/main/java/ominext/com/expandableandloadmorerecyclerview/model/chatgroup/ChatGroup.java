@@ -7,7 +7,7 @@ import android.os.Parcelable;
  * Created by LuongHH on 2/8/2017.
  */
 
-public class ChatGroup<T extends BaseExpandableItemModel> implements Parcelable {
+public class ChatGroup<T> implements Parcelable {
 
     private int chatGroupType;
     private T child;
